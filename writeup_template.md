@@ -184,6 +184,8 @@ The first image might be difficult to classify because
 
 The accuracy was found to be 20% on the images with 1 correct out of 5.
 
+The accuracy on the new images is 20% while it was 93% on the testing set and thus it seems the model is overfitting.
+
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 h
 I noticed that my images are a bit brighter and will take a different range in the color channels, maybe a range that the model is not trained on. The GTSRB dataset states that the images "contain a border of 10 % around the actual traffic sign (at least 5 pixels) to allow for edge-based approaches" and the images that I used do not all include such a border. This could have led to the model's confusion.
