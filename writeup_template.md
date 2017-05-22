@@ -34,9 +34,9 @@ The goals / steps of this project are the following:
 [x3]: ./new_images/3x.jpeg "new Image 3"
 [x4]: ./new_images/5x.jpeg "new Image 4"
 [x5]: ./new_images/6x.jpeg "new Image 5"
-[aug]: ./new_images/aug.png "augmented image"
-[ori]: ./new_images/aug.png "original image"
-[gray]: ./new_images/gray.png "original image"
+[aug]: ./examples/aug.png "augmented image"
+[ori]: ./examples/aug.png "original image"
+[gray]: ./examples/gray.png "original image"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.
