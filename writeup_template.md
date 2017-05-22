@@ -182,22 +182,11 @@ The first image might be difficult to classify because
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
-
-| Image			        |     Prediction	        					|
-|:---------------------:|:---------------------------------------------:|
-| Stop Sign      		| Stop sign   									|
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The accuracy was found to be 20% on the images with 1 correct out of 5.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-I noticed that my images are a bit brighter and will take a different range in the color channels, maybe a range that the model is not trained on. In addition, the GTSRB dataset states that the images "contain a border of 10 % around the actual traffic sign (at least 5 pixels) to allow for edge-based approaches" and the images that I used do not all include such a border. This could have led to the model's confusion.
+h
+I noticed that my images are a bit brighter and will take a different range in the color channels, maybe a range that the model is not trained on. The GTSRB dataset states that the images "contain a border of 10 % around the actual traffic sign (at least 5 pixels) to allow for edge-based approaches" and the images that I used do not all include such a border. This could have led to the model's confusion.
 
 The top 5 softmax probabilities are as follows:
 
@@ -207,7 +196,7 @@ The top 5 softmax probabilities are as follows:
 [ 0.03556685  0.03615285  0.03903935  0.04429515  0.04737494]
 [ 0.0530977   0.07001691  0.08208198  0.10873241  0.11040591]
 
-The accuracy was found to be 20% on the images with 1 correct out of 5.
+
 
 The code for making predictions on my final model is located in the cell with the headline "Analyze Performance and Output Top 5 Softmax Probabilities For Each Image Found on the Web" of the Ipython notebook.
 
